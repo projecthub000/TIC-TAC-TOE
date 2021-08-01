@@ -28,7 +28,7 @@ def start_game():
             if turn%2==0:
                 print("This is Your Turn",players[0])
                 p=int(input("Please Enter position:"))
-                if p>=10:
+                if p>=10 or p<=0:
                     print("Please enter right position")
                     continue
                 if p not in check:
@@ -49,7 +49,7 @@ def start_game():
             else:
                  print("This is Your Turn",players[1])
                  p=int(input("Please Enter Position:"))
-                 if p>=10:
+                 if p>=10 or p<=0:
                     print("Please enter right position")
                     continue
                  if p not in check:
